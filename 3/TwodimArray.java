@@ -51,10 +51,10 @@ public class TwoDimArray
     
   // }
    //return sum of all items in 2D integer array a
-  public static int sum1( int[][] a ) {
-    int sum = 0;
-    
-  }
+  // public static int sum1( int[][] a ) {
+  //   int sum = 0;
+    //-Levene
+  // }
 
 
   //return sum of all items in 2D integer array a
