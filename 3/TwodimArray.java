@@ -51,10 +51,14 @@ public class TwoDimArray
     
   // }
    //return sum of all items in 2D integer array a
-  // public static int sum1( int[][] a ) {
-  //   int sum = 0;
-    //-Levene
-  // }
+  public static int sum1( int[][] a ) {
+    int sum = 0;
+    for(i=0; i<a.length ;i++){
+     for(j=0;j<a[0].length;j++){
+       sumAmt += a[i][j];
+     }
+    
+  }
 
 
   //return sum of all items in 2D integer array a
@@ -82,17 +86,16 @@ public class TwoDimArray
 
   //return sum of all items on row r of 2D integer array a
   // using a FOREACH loop
-  public static int sumRow2( int r, int[][] m ) {
-    int result = 0; //initalizes our result, running sum
-    for (int i:m[r]){
-      result += i; //"tacks on" current element to result
-    }
-    return result;
-  }
+  // public static int sumRow2( int r, int[][] m ) {
+  //   int result = 0; //initalizes our result, running sum
+  //   for (int i:m[r]){
+  //     result += i; //"tacks on" current element to result
+  //   }
+  //   return result;
+  // }
 
 
-  public static void main( String [] args )
-  {
+  public static void main( String [] args ){
 		
        int [][] m1 = new int[4][2];
        int [][] m2 = { {2,4,6}, {3,5,7} };
