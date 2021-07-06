@@ -1,0 +1,5 @@
+1//The code would print
+"No I wug.You wuga wug.I wug"
+
+
+3//IT alters the sentence structure
