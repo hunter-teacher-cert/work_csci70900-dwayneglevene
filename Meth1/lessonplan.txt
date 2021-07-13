@@ -1,0 +1,46 @@
+## Lesson plan
+
+Aim: Students will use print,data types and concatentation to construct a statement.
+
+Do now: Look at the following lines of code:
+    String month = "May";
+    System.out.println("My birthday is in " + month);
+
+What do you think they do?
+
+Students who had JS before may ask why is the data type before the variable?
+Some students may look at the keyword print and say it prints My birthday is in May.
+
+Run the code after students take educated guesses.
+
+Mini lesson:
+
+Unline JS Java syntax is a bit different.The computer doesnt automatically know your data type, you have to state it in your declarations.
+As I did in the do now; I stated that the data type of the variable month was a String
+
+There are also others such as:
+
+int for integer, 
+boolean to test true or false,
+double for decimal value ex: 0.0,2.3
+
+Also I want to show you how I printed the statement
+Instead of console.log we use 
+System.out.println (*Prints on different line) 
+System.out.print( *PRints on same line)
+
+Within the statement I added text to my variable value with a plus sign to make a new sentence this is known as concatenation.
+
+Activity:
+Lets use what we have just discussed in a lab that asks us to print out dates and times
+
+You can find this here
+https://github.com/hunter-teacher-cert/pre-acceptance-prework/blob/master/pre02.org
+
+Allow students to work for 15 to 20 minutes
+
+Ending:
+
+Shareout What did you all find difficult about the lab?
+
+Go over the lab together with students to make sure they firmly understand data types before moving on to next lesson.   
