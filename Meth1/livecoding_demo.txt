@@ -1,0 +1,32 @@
+##########
+this lesson uses the p5 js ide
+
+here is thei link to the assignment
+https://editor.p5js.org/MrLevene/sketches/Vfrtutfyh
+
+
+
+
+//your setup function runs your function only one time
+function setup() {
+  createCanvas(400, 400);
+}
+// the draw function repeats your code in continous loop
+function draw() {
+  background(220);
+  
+  //Your looking at an if statement with a conditional
+  //this conditgion is a system variable that p5 created to see if you are pressing a key
+  
+//think of your favorite video games like fortnite or 2k you can control your player by pressing buttons  this is how you do it
+  if(keyIsPressed){
+    //nested conditional checks if the key is g only if your key is pressed
+    if(key == 'y'){
+      background('black')
+    }
+    
+    
+    
+  }
+  
+}
