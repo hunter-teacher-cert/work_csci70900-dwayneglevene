@@ -48,7 +48,7 @@ public class Driver{
 System.out.println(t.equals(t2));
 
 // add two Time objects and print results
-System.out.println(Time.add(t,t2)); // dont know why this didnt work non static method cannot ne reffered from a static context
+//System.out.println(Time.add(t,t2)); // dont know why this didnt work non static method cannot ne reffered from a static context
   }//end main()
 
 
