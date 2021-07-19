@@ -57,6 +57,7 @@ public class Llist{
 	while (currentNode != null){
 	    count = count + 1; // incremtnt if current node is not null
 	    currentNode = currentNode.getNext(); //get the next after currtent node and set it to become the new current node
+        //
 	}
 	return count;
     }
