@@ -1,0 +1,13 @@
+## Introducing  net logo
+
+## I would introduce netLogo to students by displayng the website on the board.
+Showing something that would keep the students interest like the pac man program from the netlogo library.
+Manipulating the webpage and moving the dials, rerunning the code to show students how to manipulate the code.
+
+## After a brief showing of the code as well as the program; I provide students the link to find netLogo.They would then be tasked to use 10 minutes to explore netLogo's model library. Students would take 10 minutes to explore the libraries and the following 7 minutes discussing with the person next to them their findings.
+
+## In conversation students should talk about why they found the application interesting,What does the application do when the settings are changed and how the code base may work.
+
+
+##I would introduce netlogo this way because I learn mostly when im interested in something. So me doing a brief showing of the site in the beginning of the class would do that for my students.
+##I then allow student to have a moment to individually manipulate and tinker with the code to gain understanding of thow the program and algorithm work and end it with an oppurtiniy to turn and talk with their classmates about their findings.
