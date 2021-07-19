@@ -46,5 +46,22 @@ public class Driver{
   lInsert.setNext(L4); //jump over c and connect lInsert to L4
   System.out.println(lInsert.getNext());
   
+  Llist berryList = new Llist();
+  System.out.println(berryList);
+
+  berryList.addFront("blackberry"); //4
+  berryList.addFront("Strawberry"); //3
+  berryList.addFront("Blueberry"); //2
+
+  berryList.addFront("Raspberry"); //1
+
+  berryList.addFront("Javaberry"); //0
+
+  System.out.println(berryList);
+
+  berryList.remove(3);
+
+  System.out.println(berryList);
+
     }
 }
