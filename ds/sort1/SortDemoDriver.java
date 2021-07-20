@@ -41,5 +41,8 @@ public class SortDemoDriver {
 	  System.out.println("sd2 After sorted: " + sd2);
     /*
 	*/
+    System.out.println(sd.binarySearch(5));
+
+	sd.testMerge();
     }
 }

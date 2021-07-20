@@ -123,6 +123,7 @@ public class SortDemo{
       int upperIndex = data.size();
       int middleIndex = data.size()/2;
       
+      //sd.binarySearcg(5)
       /* if upper crosses lower it's not there and the lop should exit the loop
         and if the item is at middle you should exit the loop
         
@@ -156,4 +157,61 @@ public class SortDemo{
         return data.get(index);
     }
 
-}
+
+
+
+// Preconditions: a and b are ArrayLists of Integers and
+  //                both are in increasing order
+  // Return: a new ArrayList of Integers that is the result
+  //         of merging a and b. The new ArrayList
+  //         should be in increasing order
+  private ArrayList<Integer> merge(ArrayList<Integer> a, ArrayList<Integer> b){
+    ArrayList<Integer> c = new ArrayList<Integer>();//create the new array list that will contain the merged data
+    int i = 0; //index for ArrayList a
+    int j = 0; //index for ArrayList b
+    while(i < a.size() && j < b.size()){//loop until you reach the end of BOTH arraylists
+      if (a.get(i) < b.get(j)){
+        c.add(a.get(i));
+        i++;
+      } else{
+        c.add(b.get(j));
+        j++;
+      }//if statement to compare elements in arraylists
+    }//end of while loop
+    return c;
+  }//end of merge
+
+  /*
+  * This method takes as input an int and returns an arraylist of corresponding size.
+  * This arraylist is already sorted, since it is created by first generating a random number
+  * between 0 and 9, then adding another random number between 0 and 9 to that number to create the
+  * following term; hence, every term is larger than the term that precedes it.
+  */
+  private ArrayList<Integer> fillForMerge(int size){
+  	ArrayList<Integer> a = new ArrayList<Integer>();
+  	int lastVal = r.nextInt(10);
+  	for (int i = 0 ; i < size ; i++){
+  	    a.add(lastVal);
+  	    lastVal = lastVal + r.nextInt(10);
+  	}
+  	return a;
+
+  }//end of fillForMerge
+
+
+  public void testMerge(){
+  	ArrayList<Integer> a = new ArrayList<Integer>();
+  	ArrayList<Integer> b = new ArrayList<Integer>();
+  	a = fillForMerge(20);
+  	b = fillForMerge(20);
+    System.out.println("Here are two sorted ArrayLists, ready to be merged:");
+  	System.out.println("a[]: " + a);
+  	System.out.println("b[]: " + b);
+    System.out.println();
+    System.out.println("Now, here is the merged ArrayList:");
+    System.out.println(merge(a, b));
+
+  }//end of testMerge
+
+
+}//end of class
