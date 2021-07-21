@@ -43,6 +43,8 @@ public class SortDemoDriver {
 	*/
     System.out.println(sd.binarySearch(5));
 
-	sd.testMerge();
+	 sd.testMerge();
+// 	  System.out.println();
+   //sd.msortTest();
     }
 }
