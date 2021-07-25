@@ -76,7 +76,8 @@ public class Mode{
   this solution but not findSmallestValue. the findSmallestValue
   function will help you find a strategy for approaching finding the mode.
   */
-  public int calcMode(){
+
+  public int calcMode1(){
     // need a variable to freq value
     int freq = 0;
     // create mode variable to hold which value has highest freq
@@ -92,6 +93,32 @@ public class Mode{
     }//end for
     return mode;
   } // end calcMode
+
+// skips over values that have already been check in data set
+public int calcMode2(){
+  // need a variable to freq value
+  int freq = 0;
+  // create mode variable to hold which value has highest freq
+  int mode = inputData.get(0);
+  // check the freq of values in data set
+  ArrayList<Integer> checked = new ArrayList<Integer>();
+
+  for(int i = 0; i < inputData.size(); i++){ //loops through each element
+    int valueAtIndex = inputData.get(i); // stores current value at index i
+    if(!checked.contains(valueAtIndex)) { // evaluates if value has already been checked
+      checked.add(valueAtIndex); //adds to list of checked items if not already checked
+      int currentValueFrequency = this.frequency(valueAtIndex); // sets frequency of current value
+      if(currentValueFrequency > freq) {   // check freq of one value against others
+        freq = currentValueFrequency; //updates the frequency
+        mode = valueAtIndex; //updates the mode
+      }//end if
+    }//end if
+  }//end for
+  return mode;
+} // end calcMode
+
+  // if checked.contains(valueAtIndex);
+  // i++
 
 
   public String toString(){
