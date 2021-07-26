@@ -8,7 +8,7 @@ public class Driver {
 		BSTree t = new BSTree();
 
 		t.seed();
-		/*
+	
 		int value;
 		value = t.search(10);
 		System.out.println(value);
@@ -20,6 +20,6 @@ public class Driver {
 		} catch (NullPointerException e) {
 			System.out.println("17 not in tree");
 		}
-		*/
+		
 	}
 }

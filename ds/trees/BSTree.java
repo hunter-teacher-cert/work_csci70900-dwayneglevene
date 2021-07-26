@@ -9,6 +9,42 @@ public class BSTree{
 		root = null;
 	}
 
+	public int search(int key){
+		TreeNode newNode = new TreeNode(key);
+
+		//if tree is emppty manually insert new node as root
+
+		if(root == null){
+			root = newNode;
+			return;
+		}
+		TreeNode front = root;
+		TreeNode trailer;
+
+		while(front != null){
+			int frontValue = front.getData();
+			if (frontValue ==key){
+				//if key is here it means the key is 
+				//already in the node in someway
+				//then just return
+				return frontValue;
+			}else if (frontValue < key){
+				trailer = front;
+				front = front.getRight();
+			}else {
+				trailer = front;
+				front = front.getLeft();
+			}
+		}
+		if(key > front.getVale()){
+			//insert on the right
+			front.setRight(newNode);
+		}else{
+			//inser on left
+			front.setLeft(newNode);
+		}
+	}
+
 	public void seed(){
 		TreeNode t;
 
