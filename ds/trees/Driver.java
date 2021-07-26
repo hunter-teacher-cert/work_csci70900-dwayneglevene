@@ -30,6 +30,8 @@ public class Driver {
 		t.insert(3);
 
 		t.traverse();
+		t.traverse2();
+		t.traverse3();
 
 
 
