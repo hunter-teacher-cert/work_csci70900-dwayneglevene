@@ -30,8 +30,10 @@ public class Driver {
 		t.insert(3);
 
 		t.preorderTraverse();
-		t.postordertraverse();
+		t.postorderTraverse();
 		t.inorderTraverse();
+
+		t.delete(20);
 
 
 
