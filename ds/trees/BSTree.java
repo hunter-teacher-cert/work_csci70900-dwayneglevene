@@ -8,7 +8,7 @@ public class BSTree {
 	root = null;
     }
 
-	public void traverse(TreeNode current){
+	private void preorderTraverse(TreeNode current){
 		if(current == null)
 			return;
 
@@ -17,45 +17,45 @@ public class BSTree {
 		System.out.print(current.getData() + ",");
 
 		//recurseively print out the left subtree
-		traverse(current.getLeft());
+		preorderTraverse(current.getLeft());
 		//recursively print out the right subtree
-		traverse(current.getRight());
+		preorderTraverse(current.getRight());
 	}
 
-	public void traverse(){
-		traverse(root);
+	public void preorderTraverse(){
+		preorderTraverse(root);
 		System.out.println();
 	}
 	
-	public void traverse2(TreeNode current){
+	private void postorderTraverse(TreeNode current){
 		if(current == null)
 			return;
 
 		
 
 		//recurseively print out the left subtree
-		traverse2(current.getLeft());
+		postorderTraverse(current.getLeft());
 		//recursively print out the right subtree
-		traverse2(current.getRight());
+		postorderTraverse(current.getRight());
 
 		//process the current node
 
 		System.out.print(current.getData() + ",");
 	}
 
-	public void traverse2(){
-		traverse(root);
+	public void postorderTraverse(){
+		postorderTraverse(root);
 		System.out.println();
 	}
 
-	public void traverse3(TreeNode current){
+	public void inorderTraverse(TreeNode current){
 		if(current == null)
 			return;
 
 		
 
 		//recurseively print out the left subtree
-		traverse3(current.getLeft());
+		inorderTraverse(current.getLeft());
 
 
 		//process the current node
@@ -63,11 +63,11 @@ public class BSTree {
 		System.out.print(current.getData() + ",");
 
 		//recursively print out the right subtree
-		traverse3(current.getRight());
+		inorderTraverse(current.getRight());
 	}
 
-	public void traverse3(){
-		traverse3(root);
+	public void inorderTraverse(){
+		inorderTraverse(root);
 		System.out.println();
 	}
 	
