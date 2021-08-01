@@ -31,33 +31,31 @@ public Node(String value){
      //value constrctore
  }
 
-///set data
-//set next
-
-//get data
-//get next
-
-//to string method
  
     public void setData(String value) {
 	     data = value;
     }//setData
 
+    //this manually sets your previous node , should try to make it automatic
     public void setPrev(Node n){
         prev = n;
     }
 
+    //sets your next node
     public void setNext(Node n) {
 	     next = n;
     }//setNext
 
+    //grabs the data you want to jnow
     public String getData() {
 	     return data;
     }//end getValue
 
-    public Node setPrev(){
+    //gets the previous node
+    public Node getPrev(){
         return prev;
     }
+    //gets the next node
 
     public Node getNext() {
 	     return next;
