@@ -21,22 +21,59 @@ public class DLlist{
   	Node newFront= new Node(data); //Creating a new node called new Front that is given the data info
 	// point it to what front points to
     newFront.setNext(front);
+    //newFront.setPrev(null);
     // newFront now jumps to the top of the list and the front gets pushed to the next item in the list it is still null
 	// point front to the new node
     front = newFront;
 
+    //the previous or revers of setting newfront to set Next
+
+
  }//end addFront
+
+ public void addBack(String data){
+        Node newPrev= new Node(data);
+
+        newPrev.setPrev(back);
+        back = newPrev;
+        
+//      
+//Node newPrev= new Node(data);
+//      //newPrev.setPrev(front);
+//      newFront.setPrev(back);
+//      back = newFront;
+//      //back = newPrev;
+
+
+
+  }
 
 
  //add back prev
- public  void addBack(String data){
-     Node newBack = new Node(data);
-         newBack.setPrev(back);
-         back = newBack;
+//  public  void addBack(String data){
+//      Node newBack = new Node(data);
+//           newBack.setPrev(newFront);
+//          back = newBack;
+//         //front.setPrev(newBack);
 
      
- }
-// cannot point to item when empty
+//  }
+//cannot point to item when empty
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  public String toString(){
     Node currentNode; // creating a new node called current node
     currentNode = front;
@@ -46,6 +83,7 @@ public class DLlist{
         // this is like i=i+1 is for arrays
         // but for linked lists 
         currentNode = currentNode.getNext();// the next node after each current node is the new current node
+    
     }
 
 	result = result + " null";
@@ -54,6 +92,8 @@ public class DLlist{
     }
 
 
-}
+ }
 
 //goal add, remove
+
+// https://www.geeksforgeeks.org/doubly-linked-list/
