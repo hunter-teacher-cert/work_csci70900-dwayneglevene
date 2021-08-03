@@ -26,7 +26,7 @@ public class Driver{
             musicGroups.addFront(" 112 ");
 
 
-           musicGroups.addFront(" Nsync ");¸¸¸
+           musicGroups.addFront(" Nsync ");
            musicGroups.addFront(" BackStreetBoys "); 
            musicGroups.addFront(" IMX ");
             System.out.println("This is the list of music Groups from the early 2000s");
@@ -50,6 +50,10 @@ public class Driver{
            musicGroups.set(4,"Usher");
 
           System.out.println(musicGroups);
+
+          System.out.println("I wonder where is usher in the list?");
+
+          System.out.println(musicGroups.search("Usher"));
            
 
 //Working add, remove,get, set method/ lnd 

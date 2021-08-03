@@ -112,6 +112,21 @@ public class DLlist{
 
     }
 
+    public int search(String key){
+	int count = 0;
+    Node currentNode = front;
+    while(currentNode != null){
+        if(currentNode.getData().equals(key)){
+        return count;
+        }
+    	
+
+    count = count + 1;
+    currentNode = currentNode.getNext();
+    }
+    return -1;
+    }
+
 
     public void remove(int index){
         int count= 0;
