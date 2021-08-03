@@ -22,14 +22,37 @@ public class Driver{
           DLlist musicGroups = new DLlist();
           // musicGroups.addBack("IMX");
            musicGroups.addFront(" B2K ");
-           musicGroups.addFront(" Nsync ");
+           musicGroups.addFront(" B5 ");
+            musicGroups.addFront(" 112 ");
+
+
+           musicGroups.addFront(" Nsync ");¸¸¸
            musicGroups.addFront(" BackStreetBoys "); 
            musicGroups.addFront(" IMX ");
+            System.out.println("This is the list of music Groups from the early 2000s");
+           System.out.println(musicGroups);
+           
+            System.out.println("Lets remove a group from the 1st index");
 
+           musicGroups.remove(1);
+         System.out.println(musicGroups);
+
+            System.out.println("How long is the list now?");
+
+           System.out.println(musicGroups.length());
+
+            System.out.println("What group is at the zero index?");
+
+           System.out.println(musicGroups.get(0) );
+                        
+            System.out.println("Lets change group 4 to Usher");
+
+           musicGroups.set(4,"Usher");
 
           System.out.println(musicGroups);
+           
 
-
+//Working add, remove,get, set method/ lnd 
     }
 }
 
