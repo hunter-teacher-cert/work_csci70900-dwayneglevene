@@ -21,10 +21,10 @@ public class Driver{
 
           DLlist musicGroups = new DLlist();
           // musicGroups.addBack("IMX");
-           musicGroups.addFront("B2K");
-           musicGroups.addFront("Nsync");
-           musicGroups.addFront("BackStreetBoys"); 
-           musicGroups.addBack("IMX");
+           musicGroups.addFront(" B2K ");
+           musicGroups.addFront(" Nsync ");
+           musicGroups.addFront(" BackStreetBoys "); 
+           musicGroups.addFront(" IMX ");
 
 
           System.out.println(musicGroups);

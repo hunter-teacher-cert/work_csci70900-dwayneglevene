@@ -55,7 +55,7 @@ public Node(String value){
     public Node getPrev(){
         return prev;
     }
-    //gets the next node
+    //gets the next node 
 
     public Node getNext() {
 	     return next;

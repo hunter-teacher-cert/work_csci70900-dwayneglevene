@@ -13,61 +13,26 @@ public class DLlist{
         back = null;
     }
 
-     // Add a new node containing data
-    // at the front of the list
-  public void addFront(String data){// creating a function that takes the data type string data
-      //creating new node called front
-	
-  	Node newFront= new Node(data); //Creating a new node called new Front that is given the data info
-	// point it to what front points to
-    newFront.setNext(front);
-    //newFront.setPrev(null);
-    // newFront now jumps to the top of the list and the front gets pushed to the next item in the list it is still null
-	// point front to the new node
-    front = newFront;
+    public void addFront(String data){
+    // make the new node
+    Node newNode = new Node(data);
 
-    //the previous or revers of setting newfront to set Next
+    // only point the back to the node at the back of the dlist
+    if (front == null) {
+      back = newNode;
+    }
 
-
- }//end addFront
-
- public void addBack(String data){
-        Node newPrev= new Node(data);
-
-        newPrev.setPrev(back);
-        back = newPrev;
-        
-//      
-//Node newPrev= new Node(data);
-//      //newPrev.setPrev(front);
-//      newFront.setPrev(back);
-//      back = newFront;
-//      //back = newPrev;
-
-
-
+    // point it to what front points to
+    newNode.setNext(front);
+    //point the newNode's prev to null
+    newNode.setPrev(null);
+    //as long as the front points to a node, the current front' prev field points to the newNode
+    if (front != null) {
+      front.setPrev(newNode);
+    }
+    // point front to the new node
+    front = newNode; // not quite geeting this one
   }
-
-
- //add back prev
-//  public  void addBack(String data){
-//      Node newBack = new Node(data);
-//           newBack.setPrev(newFront);
-//          back = newBack;
-//         //front.setPrev(newBack);
-
-     
-//  }
-//cannot point to item when empty
- 
- 
- 
- 
- 
- 
- 
- 
- 
  
  
  
