@@ -38,8 +38,15 @@ For example If I want to print the item at bestTiktokers[2] it would print babya
 
 # Activity
 
-We will be creating a traffic light in p5 
-You must create an array of colors for your traffic light
-Create a ‘stop light’ using shapes.
-Add fill by selecting specific colors within your array.
-fill(colors[ ]);
+- We will be creating a fortune teller in p5 
+- You will make an array for your different fortunes, one for your colors, and another for your the size of text of each fortune
+- This will then allow for a random fortune,color and size everytime your press play
+
+
+```javascript
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:'#foo'})
+  }
+}
+```
