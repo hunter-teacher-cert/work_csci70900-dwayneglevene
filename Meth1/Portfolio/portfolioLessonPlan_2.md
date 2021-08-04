@@ -17,7 +17,7 @@
 - You will make an array for your different fortunes, one for your colors, and another for your the size of text of each fortune
 - This will then allow for a random fortune,color and size everytime your press play *
 
-            **Today **
+            ** Today **
 When adding text to a P5 sketch, use these in function draw:
 
 fill(); //sets text color
