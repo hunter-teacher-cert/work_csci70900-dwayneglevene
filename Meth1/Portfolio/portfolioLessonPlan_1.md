@@ -1,11 +1,9 @@
 	Standards Covered
-IC	1,2,3,4
-CT	4,9,10
-DL	1,2,3,4,5,6,7
+
 
 ###### CT.3 Refine and visualize complex data sets to tell different stories with the same data set
 
-# Intro to arrays
+# Intro to arrays Day 1
 **Aim:** How can arrays be used instead of multiple variables?
 
 **Objective:** SWBAT use arrays in place of multiple variables?
@@ -42,11 +40,11 @@ For example If I want to print the item at bestTiktokers[2] it would print babya
 - You will make an array for your different fortunes, one for your colors, and another for your the size of text of each fortune
 - This will then allow for a random fortune,color and size everytime your press play
 
-
+Here's an example of what the fortune array should look like
 ```javascript
-function fancyAlert(arg) {
-  if(arg) {
-    $.facebox({div:'#foo'})
-  }
-}
+var teller = ["He who laughs at himself never runs out of things to laugh at.", "You will die alone and poorly dressed.", "Don’t eat the paper.", "You are not illiterate.", "You have rice in your teeth."]
 ```
+
+This is what your finished product will look like, refresh your web page to see it change
+
+https://preview.p5js.org/brionnad4/present/oWhOrmWi6
