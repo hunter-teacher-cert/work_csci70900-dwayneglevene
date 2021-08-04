@@ -46,11 +46,12 @@ This happens in function setup and we must then replace the text you want to dis
 
 
 **Finished Code Should look like this**
+[Subgoal labeling]
 
 ```javascript
 var teller = ["He who laughs at himself never runs out of things to laugh at.", "You will die alone and poorly dressed.", "Don’t eat the paper.", "You are not illiterate.", "You have rice in your teeth."]
 
-var index;
+var index; / students create the global holder variable to store the random fortune
  
 var colors = ["brown", "green", "blue", "purple", "red"]
 
@@ -59,7 +60,8 @@ var size = [13, 20, 31, 44, 25]
 function setup() {
   createCanvas(700, 200);
 
-  
+  //Intro students array methods random and length
+  //for teller colors and size
   index = teller[floor(random(0,teller.length))];
   
   chosenColors=colors[floor(random(0,colors.length))];
@@ -68,6 +70,7 @@ function setup() {
 }
 
 function draw() {
+    //Students should be able to use to system variables textSize,fill and text
   background(220);
   
   
