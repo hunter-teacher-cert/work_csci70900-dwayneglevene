@@ -11,6 +11,13 @@
 **Do now:** What does the floor() function do in p5?
 
 # Mini Lesson
+
+            ** Yesterday **
+* We will be creating a fortune teller in p5 
+- You will make an array for your different fortunes, one for your colors, and another for your the size of text of each fortune
+- This will then allow for a random fortune,color and size everytime your press play *
+
+            **Today **
 When adding text to a P5 sketch, use these in function draw:
 
 fill(); //sets text color
