@@ -9,7 +9,7 @@
 **Objective:** SWBAT use arrays in place of multiple variables?
 
 
-**Do now :** Unplugged activity - Take one of these post it notes, when i say you can: write a list of anything that interest you. It can be shoes, video games, music, etc.I I want you to number that list in order.You must follow this syntax in order to write your list
+**Do now :** **Unplugged activity** - Take one of these post it notes, when i say you can: write a list of anything that interest you. It can be shoes, video games, music, etc.I I want you to number that list in order.You must follow this syntax in order to write your list
 
 myFavsports = ["Basketball","Track","Football","Tennis","Football"];
 
@@ -38,6 +38,7 @@ For example If I want to print the item at bestTiktokers[2] it would print babya
 
 - We will be creating a fortune teller in p5 
 - You will make an array for your different fortunes, one for your colors, and another for your the size of text of each fortune
+- 3 array today to be used tomorrow [*subgoal labeling to check for understanding of how to crete an array*]
 - This will then allow for a random fortune,color and size everytime your press play
 
 Here's an example of what the fortune array should look like
