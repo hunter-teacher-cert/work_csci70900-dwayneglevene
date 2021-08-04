@@ -48,3 +48,9 @@ var teller = ["He who laughs at himself never runs out of things to laugh at.", 
 This is what your finished product will look like, refresh your web page to see it change
 
 https://preview.p5js.org/brionnad4/present/oWhOrmWi6
+
+Now that you have your 3 arrays in your p5 sketch, as comments in your code base. Write comments describing how you believe the arrays can provide the random data, if you are not sure use w3 schools or any other online resource to helo you find and idea of how to grab the random fortune data, random color data and the random size data from the three arrays
+
+
+
+# Exit ticket
