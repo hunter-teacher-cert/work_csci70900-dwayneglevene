@@ -21,36 +21,27 @@ text(‘Type your text here.’,10,60);
 //these three values are the text, 
 x and y locations of the text
 
-[Groups code along ]
+**[Group code along ]**
 
-We are going to need P5 to select a random fortune and store it in a variable.
-Let’s create a new variable, then set it equal to a random element within each array.
+We are going to need P5 to select a random fortune and store it in a variable.Let’s create a new variable, then set it equal to a random element within each array.
 
 var index; //declare global variable
-index=fortunes[floor(random(0,fortunes.length))];
+index    =   fortunes[floor(random(0,fortunes.length))];
+*Variable*     *Array*                    *Array length*
 
-This happens in function setup. Then replace the text you want to display with your variable name.
+This happens in function setup and we must then replace the text you want to display with your variable name.
 
 1. Use a variable to hold the value of a random element in your array. Remember to round the decimal number by using floor(); 
-
 
 2. Use text(); to display a random fortune on the screen
 
 3. Adjust the text size
 
+-----------------------------------
+
 # Activity
-Open your Fortune Teller.
+Now that we have done the Fortune teller array together, we now know how to have a random element print from the array
 
-Within your same sketch, declare an array of colors. Add at least five elements in this array.
+As your independent worktime
+> Do the same exact steps for your color array and size array in order for them to effect your fortunes
 
-For our fortune teller, we are going to need P5 to select a random fortune and a random text color.
-Let’s create a new variable, then set it equal to a random element within the color array.
-
-To begin your random fortune teller:
-
-1. Use a variable to hold the value of a random element in your array. Remember to round the decimal number by using floor(); 
-
-
-2.  Use text(); to display a random fortune on the screen
-
-3. Adjust the text size
