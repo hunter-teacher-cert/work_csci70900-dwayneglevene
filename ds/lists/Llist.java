@@ -27,6 +27,8 @@ public class Llist{
     front = newFront;
 
  }//end addFront
+
+ 
 // cannot point to item when empty
   public String toString(){
     Node currentNode; // creating a new node called current node
