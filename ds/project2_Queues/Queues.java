@@ -11,7 +11,7 @@ public class Queues{
     public Queues(){
         head = null;
         tail = null;
-        private String data;
+        data = "";
 
     }
 
@@ -24,9 +24,24 @@ public class Queues{
     if (head == null){
         head = node;
     }
-
-
 }
+
+    public String front(){
+        return head.getData();
+    }
+
+    public String toString(){
+    Node currentNode;
+    currentNode = head;
+    String result = "";
+    while (currentNode != null){
+      result = result + currentNode + " <- ";
+      currentNode = currentNode.getNext();
+    }
+    result = result + "tail";
+    return result;
+
+  }
 
 }
 
