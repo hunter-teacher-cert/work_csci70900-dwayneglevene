@@ -24,7 +24,7 @@ public Node(String value){
     //value constructor
 }
 
- public Node(String value,Node prev,Node Next){
+ public Node(String value,Node prev,Node next){
      data = value;
      this.prev = prev;
      this.next = next;
